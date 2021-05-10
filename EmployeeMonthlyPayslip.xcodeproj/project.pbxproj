@@ -14,9 +14,10 @@
 		DF062E8726491AC50094D783 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E85264919740094D783 /* Constants.swift */; };
 		DF062E8826491AC90094D783 /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E822649190B0094D783 /* DataValidator.swift */; };
 		DF062E8B26495F4D0094D783 /* DataValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */; };
-        DF062E8C2649624F0094D783 /* DataValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */; };
-        DF062E8F2649634B0094D783 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8E2649634B0094D783 /* Employee.swift */; };
-        DF062E91264963770094D783 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E90264963770094D783 /* Income.swift */; };
+		DF062E942649644E0094D783 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E932649644E0094D783 /* Display.swift */; };
+		DF062E96264964780094D783 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E95264964780094D783 /* MessageType.swift */; };
+		DF062E97264964DF0094D783 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E90264963770094D783 /* Income.swift */; };
+		DF062E98264964E20094D783 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8E2649634B0094D783 /* Employee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidatorProtocol.swift; sourceTree = "<group>"; };
 		DF062E8E2649634B0094D783 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		DF062E90264963770094D783 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		DF062E932649644E0094D783 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		DF062E95264964780094D783 /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 		DF062E92264963FA0094D783 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DF062E932649644E0094D783 /* Display.swift */,
+				DF062E95264964780094D783 /* MessageType.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,8 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF062E97264964DF0094D783 /* Income.swift in Sources */,
+				DF062E98264964E20094D783 /* Employee.swift in Sources */,
+				DF062E942649644E0094D783 /* Display.swift in Sources */,
 				DF062E8B26495F4D0094D783 /* DataValidatorProtocol.swift in Sources */,
 				DF062E832649190B0094D783 /* DataValidator.swift in Sources */,
+				DF062E96264964780094D783 /* MessageType.swift in Sources */,
 				DF062E6F264916FC0094D783 /* main.swift in Sources */,
 				DF062E86264919740094D783 /* Constants.swift in Sources */,
 			);
