@@ -171,4 +171,42 @@ class DataValidatorTests: XCTestCase {
         // Assert
         XCTAssertFalse(numericStatus, "The isValidSalary() should return FALSE but returned TRUE when invalid value of salary is passed")
     }
+
+    //MARK:- Tests for Remove Spaces
+
+    func test_WhenPassedStringWithSpace_ShouldReturnStringWithNoSpaces() {
+        // Arrange
+        let valueWithSpaces = "Mc Donalds"
+        // Act
+        let result = sut.removeSpaces(string: valueWithSpaces)
+        // Assert
+        XCTAssertEqual(result, "McDonalds", "The removeSpaces() should return string with no spaces but returned invalid result")
+    }
+
+    func test_WhenPassedStringWithNoSpace_ShouldReturnStringWithNoSpaces() {
+        // Arrange
+        let valueWithSpaces = "McDonalds"
+        // Act
+        let result = sut.removeSpaces(string: valueWithSpaces)
+        // Assert
+        XCTAssertEqual(result, "McDonalds", "The removeSpaces() should return string with no spaces but returned invalid result")
+    }
+
+    func test_WhenPassedStringWithOnlySpace_ShouldReturnStringWithNoSpaces() {
+        // Arrange
+        let valueWithSpaces = "                                                         "
+        // Act
+        let result = sut.removeSpaces(string: valueWithSpaces)
+        // Assert
+        XCTAssertEqual(result, "", "The removeSpaces() should return string with no spaces but returned invalid result")
+    }
+
+    func test_WhenPassedStringWithNoSpaces_ShouldReturnStringWithNoSpaces() {
+        // Arrange
+        let valueWithSpaces = "ILoveVictoria"
+        // Act
+        let result = sut.removeSpaces(string: valueWithSpaces)
+        // Assert
+        XCTAssertNotEqual(result, "I Love Victoria", "The removeSpaces() should return string with no spaces but returned invalid result")
+    }
 }

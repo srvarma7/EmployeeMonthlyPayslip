@@ -14,6 +14,7 @@ final class DataValidator: DataValidatorProtocol {
     }
 
     public func isValidName(name: String) -> Bool {
+        /// Code reference - StackOverFlow
         let regEx = Constants.General.VALID_NAME_REGEX
         // `try!` will always succeed because the pattern is a valid regular expression
         let regexPatter = try! NSRegularExpression(pattern: regEx, options: .caseInsensitive)
@@ -29,5 +30,9 @@ final class DataValidator: DataValidatorProtocol {
 
     public func isValidMinimumSalary(salary: Double) -> Bool {
         return salary > 0
+    }
+
+    public func removeSpaces(string: String) -> String {
+        return string.replacingOccurrences(of: " ", with: "")
     }
 }
