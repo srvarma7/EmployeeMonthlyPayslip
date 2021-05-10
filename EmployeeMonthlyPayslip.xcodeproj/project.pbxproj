@@ -14,6 +14,9 @@
 		DF062E8726491AC50094D783 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E85264919740094D783 /* Constants.swift */; };
 		DF062E8826491AC90094D783 /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E822649190B0094D783 /* DataValidator.swift */; };
 		DF062E8B26495F4D0094D783 /* DataValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */; };
+        DF062E8C2649624F0094D783 /* DataValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */; };
+        DF062E8F2649634B0094D783 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8E2649634B0094D783 /* Employee.swift */; };
+        DF062E91264963770094D783 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E90264963770094D783 /* Income.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +83,7 @@
 		DF062E6D264916FC0094D783 /* EmployeeMonthlyPayslip */ = {
 			isa = PBXGroup;
 			children = (
+				DF062E92264963FA0094D783 /* View */,
 				DF062E8D264963340094D783 /* Models */,
 				DF062E8926495F2E0094D783 /* Protocols */,
 				DF062E84264919630094D783 /* Constants */,
@@ -129,6 +133,13 @@
 				DF062E90264963770094D783 /* Income.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DF062E92264963FA0094D783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,8 +233,6 @@
 				DF062E8B26495F4D0094D783 /* DataValidatorProtocol.swift in Sources */,
 				DF062E832649190B0094D783 /* DataValidator.swift in Sources */,
 				DF062E6F264916FC0094D783 /* main.swift in Sources */,
-				DF062E8F2649634B0094D783 /* Employee.swift in Sources */,
-				DF062E91264963770094D783 /* Income.swift in Sources */,
 				DF062E86264919740094D783 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF062E8C2649624F0094D783 /* DataValidatorProtocol.swift in Sources */,
 				DF062E7C2649177D0094D783 /* DataValidatorTests.swift in Sources */,
 				DF062E8726491AC50094D783 /* Constants.swift in Sources */,
 				DF062E8826491AC90094D783 /* DataValidator.swift in Sources */,
