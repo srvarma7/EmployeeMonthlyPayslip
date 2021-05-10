@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		DF062E6F264916FC0094D783 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E6E264916FC0094D783 /* main.swift */; };
 		DF062E7C2649177D0094D783 /* EmployeeMonthlyPayslipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E7B2649177D0094D783 /* EmployeeMonthlyPayslipTests.swift */; };
+		DF062E832649190B0094D783 /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E822649190B0094D783 /* DataValidator.swift */; };
+		DF062E86264919740094D783 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E85264919740094D783 /* Constants.swift */; };
+		DF062E8726491AC50094D783 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E85264919740094D783 /* Constants.swift */; };
+		DF062E8826491AC90094D783 /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E822649190B0094D783 /* DataValidator.swift */; };
+		DF062E8B26495F4D0094D783 /* DataValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +34,9 @@
 		DF062E792649177D0094D783 /* EmployeeMonthlyPayslipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeeMonthlyPayslipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF062E7B2649177D0094D783 /* EmployeeMonthlyPayslipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMonthlyPayslipTests.swift; sourceTree = "<group>"; };
 		DF062E7D2649177D0094D783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF062E822649190B0094D783 /* DataValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidator.swift; sourceTree = "<group>"; };
+		DF062E85264919740094D783 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,9 @@
 		DF062E6D264916FC0094D783 /* EmployeeMonthlyPayslip */ = {
 			isa = PBXGroup;
 			children = (
+				DF062E8926495F2E0094D783 /* Protocols */,
+				DF062E84264919630094D783 /* Constants */,
+				DF062E81264918F30094D783 /* Validation */,
 				DF062E6E264916FC0094D783 /* main.swift */,
 			);
 			path = EmployeeMonthlyPayslip;
@@ -82,6 +93,30 @@
 				DF062E7D2649177D0094D783 /* Info.plist */,
 			);
 			path = EmployeeMonthlyPayslipTests;
+			sourceTree = "<group>";
+		};
+		DF062E81264918F30094D783 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				DF062E822649190B0094D783 /* DataValidator.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		DF062E84264919630094D783 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DF062E85264919740094D783 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DF062E8926495F2E0094D783 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF062E8B26495F4D0094D783 /* DataValidatorProtocol.swift in Sources */,
+				DF062E832649190B0094D783 /* DataValidator.swift in Sources */,
 				DF062E6F264916FC0094D783 /* main.swift in Sources */,
+				DF062E86264919740094D783 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF062E7C2649177D0094D783 /* EmployeeMonthlyPayslipTests.swift in Sources */,
+				DF062E8726491AC50094D783 /* Constants.swift in Sources */,
+				DF062E8826491AC90094D783 /* DataValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
