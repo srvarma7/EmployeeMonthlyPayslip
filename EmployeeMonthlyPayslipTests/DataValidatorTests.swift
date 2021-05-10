@@ -8,7 +8,7 @@
 import XCTest
 @testable import EmployeeMonthlyPayslip
 
-class EmployeeMonthlyPayslipTests: XCTestCase {
+class DataValidatorTests: XCTestCase {
 
     var sut: DataValidator!
 
@@ -149,7 +149,7 @@ class EmployeeMonthlyPayslipTests: XCTestCase {
         // Arrange
         let invalidSalary: Double = 100000
         // Act
-        let numericStatus = sut.isValidSalary(salary: invalidSalary)
+        let numericStatus = sut.isValidMinimumSalary(salary: invalidSalary)
         // Assert
         XCTAssertTrue(numericStatus, "The isValidSalary() should return TRUE but returned FALSE when valid value of salary is passed")
     }
@@ -158,7 +158,7 @@ class EmployeeMonthlyPayslipTests: XCTestCase {
         // Arrange
         let invalidSalary: Double = -10000
         // Act
-        let numericStatus = sut.isValidSalary(salary: invalidSalary)
+        let numericStatus = sut.isValidMinimumSalary(salary: invalidSalary)
         // Assert
         XCTAssertFalse(numericStatus, "The isValidSalary() should return FALSE but returned TRUE when negative value of salary is passed")
     }
@@ -167,20 +167,8 @@ class EmployeeMonthlyPayslipTests: XCTestCase {
         // Arrange
         let invalidSalary: Double = 0
         // Act
-        let numericStatus = sut.isValidSalary(salary: invalidSalary)
+        let numericStatus = sut.isValidMinimumSalary(salary: invalidSalary)
         // Assert
         XCTAssertFalse(numericStatus, "The isValidSalary() should return FALSE but returned TRUE when invalid value of salary is passed")
     }
-
-
-
-    func sample() {
-        // Arrange
-
-        // Act
-
-        // Assert
-
-    }
-
 }
