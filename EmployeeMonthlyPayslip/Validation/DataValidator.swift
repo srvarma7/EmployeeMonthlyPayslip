@@ -35,4 +35,23 @@ final class DataValidator: DataValidatorProtocol {
     public func removeSpaces(string: String) -> String {
         return string.replacingOccurrences(of: " ", with: "")
     }
+
+    public func validateUserInput(input: String) -> [String]? {
+        let resultAfterSplit = input.components(separatedBy: "\"")
+        return resultAfterSplit.count == 3 &&
+            !resultAfterSplit[0].isEmpty &&
+            !resultAfterSplit[1].isEmpty &&
+            !resultAfterSplit[2].isEmpty ? resultAfterSplit : nil
+    }
+
+    public func extractData(from result: [String]) -> (keyword: String, name: String, salary: String) {
+        precondition(result.count == 3)
+        return (keyword: removeSpaces(string: result[0]),
+                name: result[1],
+                salary: removeSpaces(string: result[2]))
+    }
+
+    public func roundToTwoDecimals(value: Double) -> Double {
+        return round(value * 100)/100
+    }
 }
