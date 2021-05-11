@@ -37,24 +37,57 @@ class Display {
     }
 
     // MARK:- Utility Functions
-    func welcomeMessage() {
+    public func welcomeMessage() {
         print("**************************************************")
         print("* Welcome to Employee Monthly Pay Slip generator *")
-        print("**************************************************\n")
+        print("**************************************************")
     }
 
-    func programInstructions() {
-        print("Please enter GenerateMonthlyPayslip along with Name and Annual salary of the Employee:")
+    public func programInstructions() {
+        print("\nPlease enter GenerateMonthlyPayslip along with Name and Annual salary of the Employee:")
         print("Example input:- GenerateMonthlyPayslip \"Mary Song\" 60000")
         print("~~~~~~~ ~~~~~")
     }
 
-    func monthlyPaySlip(income: Income) {
+    public func monthlyPaySlip(income: Income) {
         print("\n********* Generated Monthly Payslip *********")
         print("-> Monthly Payslip for: \"\(income.employeeName)\"")
         print("-> Gross Monthly Income: $\(income.grossMonthlyIncome)")
         print("-> Monthly Income Tax: $\(income.monthlyIncomeTax)")
         print("-> Net Monthly Income: $\(income.netMonthlyIncome)")
         print("*********************************************\n")
+    }
+
+    public func emptyInputProvided() {
+        printWith(type: .warning, message: "Input cannot be empty. Please try again...")
+    }
+
+    public func invalidUserInput() {
+        printWith(type: .warning, message: "Invalid input. Ensure all three attributes are provided correctly...")
+    }
+
+    public func invalidKeywordFound() {
+        printWith(type: .error, message: "Invalid keyword found. Please try again...")
+    }
+
+    public func invalidNameFound() {
+        printWith(type: .error, message: "Invalid name found. Please try again...")
+    }
+
+    public func invalidSalaryFound(type: SalaryErrorType) {
+        switch type {
+        case .nonNumeric:
+            salaryNonNumericFound()
+        case .nonPositive:
+            salaryNonPositiveNumberFound()
+        }
+    }
+
+    private func salaryNonNumericFound() {
+        printWith(type: .error, message: "Invalid salary found. Enter salary in numeric. Please try again...")
+    }
+
+    private func salaryNonPositiveNumberFound() {
+        printWith(type: .error, message: "Invalid salary found. Salary cannot be negative. Please try again...")
     }
 }
