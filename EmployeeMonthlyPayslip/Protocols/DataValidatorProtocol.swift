@@ -10,4 +10,6 @@ protocol DataValidatorProtocol {
     func isValidName(name: String) -> Bool
     func isSalaryAValidNumber(salaryInString salary: String) -> Bool
     func isValidMinimumSalary(salary: Double) -> Bool
+
+    func validateUserInput(input: String) -> [String]?
 }
