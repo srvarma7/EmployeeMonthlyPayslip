@@ -9,12 +9,13 @@ import XCTest
 @testable import EmployeeMonthlyPayslip
 
 class DataValidatorTests: XCTestCase {
+
     // System under test variable of type DataValidator
     var sut: DataValidator!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        // Arrange system under test
+        // Arrange system under test with DataValidator instance
         sut = DataValidator()
     }
 
@@ -26,7 +27,7 @@ class DataValidatorTests: XCTestCase {
     //MARK:- Tests for Keyword
     func test_WhenPassedValidKeyword_ShouldReturnTrue() {
         // Arrange
-        let validKeyWord: String = Constants.General.KEYWORD
+        let validKeyWord: String = Constants.Validation.KEYWORD
         // Act
         let keywordStatus = sut.isValidKeyword(word: validKeyWord)
         // Assert
@@ -62,7 +63,7 @@ class DataValidatorTests: XCTestCase {
         let nameStatus = sut.isValidName(name: validName)
         // Assert
         XCTAssertTrue(nameStatus,
-                      "The isValidName() should return TRUE but returned FALSE when valid name of length greater than or equals to \(Constants.General.MIN_VALID_NAME_LENGTH) is passed")
+                      "The isValidName() should return TRUE but returned FALSE when valid name of length greater than or equals to \(Constants.Validation.MIN_VALID_NAME_LENGTH) is passed")
     }
 
     func test_WhenPassedInvalidNameWithOneCharacterLength_ShouldReturnFalse() {
@@ -72,7 +73,7 @@ class DataValidatorTests: XCTestCase {
         let nameStatus = sut.isValidName(name: invalidName)
         // Assert
         XCTAssertFalse(nameStatus,
-                       "The isValidName() should return FALSE but returned TRUE when invalid name of length \(invalidName.count) less than \(Constants.General.MIN_VALID_NAME_LENGTH) is passed")
+                       "The isValidName() should return FALSE but returned TRUE when invalid name of length \(invalidName.count) less than \(Constants.Validation.MIN_VALID_NAME_LENGTH) is passed")
     }
 
     func test_WhenPassedEmptyName_ShouldReturnFalse() {
@@ -82,7 +83,7 @@ class DataValidatorTests: XCTestCase {
         let nameStatus = sut.isValidName(name: invalidName)
         // Assert
         XCTAssertFalse(nameStatus,
-                       "The isValidName() should return FALSE but returned TRUE when empty name of length which is less than \(Constants.General.MIN_VALID_NAME_LENGTH) is passed")
+                       "The isValidName() should return FALSE but returned TRUE when empty name of length which is less than \(Constants.Validation.MIN_VALID_NAME_LENGTH) is passed")
     }
 
     func test_WhenPassedValidNameOfSize37Length_ShouldReturnTrue() {
@@ -92,7 +93,7 @@ class DataValidatorTests: XCTestCase {
         let nameStatus = sut.isValidName(name: validName)
         // Assert
         XCTAssertTrue(nameStatus,
-                      "The isValidName() should return TRUE but returned FALSE when valid name of length \(validName.count) than is equals to \(Constants.General.MAX_VALID_NAME_LENGTH) is passed")
+                      "The isValidName() should return TRUE but returned FALSE when valid name of length \(validName.count) than is equals to \(Constants.Validation.MAX_VALID_NAME_LENGTH) is passed")
     }
 
     func test_WhenPassedInvalidNameOfSize38Length_ShouldReturnFalse() {
@@ -102,7 +103,7 @@ class DataValidatorTests: XCTestCase {
         let nameStatus = sut.isValidName(name: invalidName)
         // Assert
         XCTAssertFalse(nameStatus,
-                       "The isValidName() should return FALSE but returned TRUE when invalid name of length \(invalidName.count) which is greater than \(Constants.General.MIN_VALID_NAME_LENGTH) is passed")
+                       "The isValidName() should return FALSE but returned TRUE when invalid name of length \(invalidName.count) which is greater than \(Constants.Validation.MIN_VALID_NAME_LENGTH) is passed")
     }
 
     func test_WhenPassedInvalidNameWithSpecialCharacters_ShouldReturnFalse() {
