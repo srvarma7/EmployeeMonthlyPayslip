@@ -8,7 +8,7 @@
 /**
  Monthly Payslip Protocol
  */
-protocol MonthlyPayslipProtocol {
+protocol TaxCalculationProtocol {
     // Protocol methods for generating payslip
     func generateMonthlyPaySlip(employee: Employee) -> Income
     func calculateGrossMonthlyIncome(for annualSalary: Double) -> Double

@@ -116,7 +116,7 @@ final class MonthlyPayslip {
     }
 }
 
-extension MonthlyPayslip: MonthlyPayslipProtocol {
+extension MonthlyPayslip: TaxCalculationProtocol {
 
     /// This method calculates gross monthly income, monthly income tax and net monthly income. Then returns the calculated values as Income variable.
     /// - Parameter employee: The object of employee which contains name and annual salary.

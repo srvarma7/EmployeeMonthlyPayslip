@@ -21,8 +21,8 @@
 		DF062E99264967E20094D783 /* DataValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */; };
 		DF062E9A264967F40094D783 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E8E2649634B0094D783 /* Employee.swift */; };
 		DF062E9B264967F70094D783 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E90264963770094D783 /* Income.swift */; };
-		DF062E9D26496ADE0094D783 /* MonthlyPayslipProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E9C26496ADE0094D783 /* MonthlyPayslipProtocol.swift */; };
-		DF062E9E26496AED0094D783 /* MonthlyPayslipProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E9C26496ADE0094D783 /* MonthlyPayslipProtocol.swift */; };
+		DF062E9D26496ADE0094D783 /* TaxCalculationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E9C26496ADE0094D783 /* TaxCalculationProtocol.swift */; };
+		DF062E9E26496AED0094D783 /* TaxCalculationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E9C26496ADE0094D783 /* TaxCalculationProtocol.swift */; };
 		DF062EA026496B3F0094D783 /* MonthlyPayslip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E9F26496B3F0094D783 /* MonthlyPayslip.swift */; };
 		DF062EA126496B420094D783 /* MonthlyPayslip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062E9F26496B3F0094D783 /* MonthlyPayslip.swift */; };
 		DF062EA3264974AC0094D783 /* SalaryErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF062EA2264974AC0094D783 /* SalaryErrorType.swift */; };
@@ -58,7 +58,7 @@
 		DF062E90264963770094D783 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
 		DF062E932649644E0094D783 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
 		DF062E95264964780094D783 /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
-		DF062E9C26496ADE0094D783 /* MonthlyPayslipProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPayslipProtocol.swift; sourceTree = "<group>"; };
+		DF062E9C26496ADE0094D783 /* TaxCalculationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculationProtocol.swift; sourceTree = "<group>"; };
 		DF062E9F26496B3F0094D783 /* MonthlyPayslip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPayslip.swift; sourceTree = "<group>"; };
 		DF062EA2264974AC0094D783 /* SalaryErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryErrorType.swift; sourceTree = "<group>"; };
 		DF3BB301264AB3640071551D /* MonthlyPayslipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPayslipTests.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				DF062E8A26495F4D0094D783 /* DataValidatorProtocol.swift */,
-				DF062E9C26496ADE0094D783 /* MonthlyPayslipProtocol.swift */,
+				DF062E9C26496ADE0094D783 /* TaxCalculationProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 				DF062E942649644E0094D783 /* Display.swift in Sources */,
 				DF062E8B26495F4D0094D783 /* DataValidatorProtocol.swift in Sources */,
 				DF062EA026496B3F0094D783 /* MonthlyPayslip.swift in Sources */,
-				DF062E9D26496ADE0094D783 /* MonthlyPayslipProtocol.swift in Sources */,
+				DF062E9D26496ADE0094D783 /* TaxCalculationProtocol.swift in Sources */,
 				DF062EA3264974AC0094D783 /* SalaryErrorType.swift in Sources */,
 				DF062E832649190B0094D783 /* DataValidator.swift in Sources */,
 				DF062E96264964780094D783 /* MessageType.swift in Sources */,
@@ -276,7 +276,7 @@
 			files = (
 				DF062E99264967E20094D783 /* DataValidatorProtocol.swift in Sources */,
 				DF062E7C2649177D0094D783 /* DataValidatorTests.swift in Sources */,
-				DF062E9E26496AED0094D783 /* MonthlyPayslipProtocol.swift in Sources */,
+				DF062E9E26496AED0094D783 /* TaxCalculationProtocol.swift in Sources */,
 				DF062E8726491AC50094D783 /* Constants.swift in Sources */,
 				DF062EA526497E3D0094D783 /* Display.swift in Sources */,
 				DF062EA126496B420094D783 /* MonthlyPayslip.swift in Sources */,
