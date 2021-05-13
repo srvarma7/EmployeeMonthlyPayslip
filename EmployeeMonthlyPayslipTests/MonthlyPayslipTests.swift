@@ -122,8 +122,6 @@ class MonthlyPayslipTests: XCTestCase {
                        "The calculateNetMonthlyIncome() should have returned valid net monthly income tax with correct decimals but returned invalid net monthly income tax")
     }
 
-
-    #warning("To silent the warnings please comment the lines")
     #warning("Note:- The negative test cases for calculateGrossMonthlyIncome(), calculateMonthlyIncomeTax(), calculateNetMonthlyIncome() were not written as the functions itself stop executing when precondition is failed")
 //    func test_calculateGrossMonthlyIncome_WhenPassedNegativeSalary_ShouldReturnValidValue() {
 //        // Arrange

@@ -27,19 +27,19 @@ class DataValidatorTests: XCTestCase {
     //MARK:- Tests for Keyword
     func test_WhenPassedValidKeyword_ShouldReturnTrue() {
         // Arrange
-        let validKeyWord: String = Constants.Validation.KEYWORD
+        let validKeyword: String = Constants.Validation.KEYWORD
         // Act
-        let keywordStatus = sut.isValidKeyword(word: validKeyWord)
+        let keywordStatus = sut.isValidKeyword(word: validKeyword)
         // Assert
         XCTAssertTrue(keywordStatus,
                       "The isValidKeyword() should return TRUE but returned FALSE when valid keyword is passed")
     }
 
-    func test_WhenPassedInvalidKeyword_ShouldReturnFalse() {
+    func test_WhenPassedInValidKeyword_ShouldReturnFalse() {
         // Arrange
-        let invalidKeyWord: String = "GenPayslip"
+        let invalidKeyword: String = "GenPayslip"
         // Act
-        let keywordStatus = sut.isValidKeyword(word: invalidKeyWord)
+        let keywordStatus = sut.isValidKeyword(word: invalidKeyword)
         // Assert
         XCTAssertFalse(keywordStatus,
                        "The isValidKeyword() should return FALSE but returned TRUE when invalid keyword is passed")
@@ -47,9 +47,9 @@ class DataValidatorTests: XCTestCase {
 
     func test_WhenPassedEmptyKeyWord_ShouldReturnFalse() {
         // Arrange
-        let invalidKeyWord: String = ""
+        let invalidKeyword: String = ""
         // Act
-        let keywordStatus = sut.isValidKeyword(word: invalidKeyWord)
+        let keywordStatus = sut.isValidKeyword(word: invalidKeyword)
         // Assert
         XCTAssertFalse(keywordStatus,
                        "The isValidKeyword() should return FALSE but returned TRUE when empty keyword is passed")
