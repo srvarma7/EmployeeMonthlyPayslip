@@ -167,7 +167,7 @@ extension MonthlyPayslip: TaxCalculationProtocol {
             // Check if remaining salary is greater that current tax base slab
             if remainingSalary > currentTaxRateBaseValue {
                 /// Condition passed. So, there is amount to calculate tax with current tax percentage.
-                // Get the amount that belongs to current tax slab
+                // Get the remaining amount that belongs to current tax slab
                 let taxableAmount = remainingSalary - currentTaxRateBaseValue
                 // Calculate the tax amount for the amount with tax percentage
                 let taxForCurrentAmount = taxableAmount * Constants.Tax.RATE_PERCENTAGE[index]
